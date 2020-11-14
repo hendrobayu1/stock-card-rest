@@ -41,7 +41,7 @@ class MailController extends Controller
 
         Mail::to($alamat)->send(new SentEmail());
 
-        return "Email telah terkirim ke alamat ".$alamat;
+        return "Email telah terkirim ke alamat tujuan ".$alamat;
     }
 
     public function directSentMail(Request $request){
